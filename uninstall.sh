@@ -5,7 +5,19 @@ if (( $EUID != 0 )); then
     exit 1
 fi
 
+## stop service
 systemctl stop ngrok.service
 systemctl disable ngrok.service
+
+## remove service
 rm /lib/systemd/system/ngrok.service
-rm -rf /opt/ngrok
+
+## remove configuration
+rm -rf /etc/ngrok
+
+## remove logdir
+rm -rf /var/log/ngrok
+
+## remove binary
+rm -rf /usr/local/bin/ngrok
+

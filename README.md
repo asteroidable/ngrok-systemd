@@ -1,10 +1,10 @@
 # Installation
 
-Step 1: Place [`ngrok`](https://ngrok.com/download) in `/opt/ngrok/`.
+Step 1: Place [`ngrok`](https://ngrok.com/download) in `/usr/local/bin/`.
 
-Step 2: Get `authtoken` from ngrok website, then add it to `/opt/ngrok/ngrok.yml`.
+Step 2: Get `authtoken` from ngrok website, then add it to `/etc/ngrok/ngrok.yml`.
 
-Step 3. Modify your own configrations in `/opt/ngrok/ngrok.yml`.
+Step 3. Modify your own configrations in `/etc/ngrok/ngrok.yml`.
 
 Step 4: Add `ngrok.service` to `/lib/systemd/system/`.
 
